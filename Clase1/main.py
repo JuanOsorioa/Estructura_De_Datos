@@ -1,0 +1,1 @@
+print("Primer codigo en python")
