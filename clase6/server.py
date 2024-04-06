@@ -1,4 +1,4 @@
-# Para correr el servidor: uvicorn server:app --reload
+'''# Para correr el servidor: uvicorn server:app --reload
 # se debe instalar uvicorn: pip install uvicorn
 # se debe instalar FastAPI: pip install fastapi
 from fastapi import FastAPI
@@ -28,7 +28,18 @@ def desencolar():
     elemento = cola.desencolar()
     return {"status": "ok", "elemento": elemento}
 
-@app.get("/ver_todos")
-def ver_todos():
+@app.get("/ver_primero")
+def ver_primero():
+    elementos = cola.ver_primero()
+    return {"status": "ok", "elementos": elementos}
+
+@app.get("/ver_listado")
+def ver_listado():
     elementos = cola.ver_listado()
     return {"status": "ok", "elementos": elementos}
+
+@app.get("/ver_ultimo")
+def ver_ultimo():
+    elementos = cola.ver_ultimo()
+    return {"status": "ok", "elementos": elementos}
+'''

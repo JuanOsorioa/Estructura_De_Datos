@@ -1,4 +1,4 @@
-import requests
+'''import requests
 
 url = 'https://shiny-system-wqrq9qjpr5q2ppq-8000.app.github.dev/'
 
@@ -8,4 +8,4 @@ print(r.text)
 
 # ejemplo request en POST
 r = requests.post(url + 'encolar', json={'nombre': 'Juan', 'productos': ['manzana', 'pera']})
-print(r.text)
+print(r.text)'''
